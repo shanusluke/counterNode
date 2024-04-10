@@ -4,23 +4,17 @@ const { Worker } = require("worker_threads");
 const app = express();
 const port = 3000;
 
-let counter = 0
 
-function Countincrement(){
-    counter++;
-}
 
-setInterval(Countincrement, 1000)
 
 app.get("/", (req, res) => {
-    counter++
   res.status(200).send(`
     <html>
       <head>
         <title>Counter</title>
       </head>
       <body>
-        <h1 id= 'counter'>Counter Value: ${counter}</h1>
+        <h1 id= 'counter'> ${counter}</h1>
         <button onclick="addToDatabase()">Add Counter to Database</button>
         <script>
           function addToDatabase() {
@@ -35,13 +29,13 @@ app.get("/", (req, res) => {
               });
           }
 
-       
-        
-        function updateCounter() {
-            document.getElementById('counter').innerText = 'Counter Value: ' + ${counter};
-        }
+       var counter = document.querySelector("#counter");
 
-        setInterval(updateCounter, 1000); // Update the counter value on the webpage every second
+       var count = 1;
+       setInterval(() => {
+        count++;
+        counter.innerText = 'Counter value: '+ count;
+       },1000)
         </script>
       </body>
     </html>
