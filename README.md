@@ -30,3 +30,6 @@ To start the application, run the following command in your terminal:
 ```bash
 node index.js
 ```
+# Demo
+
+<video controls src="docs/project-demo.mp4" title="Title"></video>
