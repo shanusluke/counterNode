@@ -32,4 +32,7 @@ node index.js
 ```
 # Demo
 
-<video controls src="docs/project-demo.mp4" title="Title"></video>
+
+
+https://github.com/shanusluke1999/counterNode/assets/79683487/79b356ec-c290-4127-bf42-6879c1a8e4fa
+
