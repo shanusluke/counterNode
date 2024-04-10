@@ -6,7 +6,7 @@ Counter is a project that uses [Node.js](https://nodejs.org/en/download/), worke
 
 ## Installation
 
-First, you'll need to have Node.js and PostgreSQL installed on your machine. Once you have those, you can clone the project and install its dependencies:
+First, you'll need to have [Node.js](https://nodejs.org/en/download/) and [PostgreSQL](https://www.postgresql.org/download/) installed on your machine. Once you have those, you can clone the project and install its dependencies:
 
 ```bash
 git clone <repository-url>
