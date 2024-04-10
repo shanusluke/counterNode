@@ -1,7 +1,7 @@
 const { parentPort, workerData } = require('worker_threads');
 const { Client } = require('pg');
 
-const counter = workerData.counter;
+const count = workerData.count;
 const client = new Client({
   user: "postgres",
   host: "localhost",
@@ -16,8 +16,8 @@ client.connect()
 
 
 
-
-client.query('INSERT INTO dataset (counter_value) VALUES ($1)', [counter])
+  console.log('SQL query:', 'INSERT INTO dataset (counter_value) VALUES ($1)', [count]);
+client.query('INSERT INTO dataset (counter_value) VALUES ($1)', [count])
   .then(() => {
     console.log('Counter value inserted into database from worker thread');
     parentPort.postMessage({ message: 'Counter value inserted into database' });
