@@ -2,7 +2,7 @@
 
 ## Description
 
-Counter is a project that uses [Node.js](https://nodejs.org/en/download/), worker threads, Express, and [PostgreSQL](https://www.postgresql.org/download/) to add a count value to a database. It demonstrates the use of worker threads in a Node.js application to perform CPU-intensive tasks without blocking the main thread. This project is a great example of how to build a scalable application with Node.js and PostgreSQL.
+Counter is a project that uses [Node.js](https://nodejs.org/en/download/), worker threads, Express, and [PostgreSQL](https://www.postgresql.org/download/) to add a count value to a database. It demonstrates the use of worker threads in a Node.js application to perform CPU-intensive tasks without blocking the main thread. 
 
 ## Installation
 
