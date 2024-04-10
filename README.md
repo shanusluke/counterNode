@@ -14,7 +14,7 @@ cd Counter
 npm install
 ```
 
-or 
+or Install the express and pg packages individually:
 
 ```bash
 npm install express
